@@ -14,6 +14,8 @@
             integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
             crossorigin="anonymous"></script>
 
+        <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+
 
         <link rel="stylesheet"
             href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css"
@@ -21,9 +23,12 @@
 
 
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js"
             integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT"
             crossorigin="anonymous"></script>
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
         <link href="/dist/output.css" rel="stylesheet">
 
@@ -31,7 +36,7 @@
         <title>Perfalth</title>
     </head>
 
-    <body>
+    <body style="background-color: black;">
 
 
 
@@ -74,7 +79,7 @@
                         <li class="nav-item">
                             <form class="d-flex">
                                 <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                                <button class="btn btn-outline-success" type="submit">Search</button>
+                                <button class="btn btn-outline-warning" type="submit">Search</button>
                             </form>
                         </li>
                     </ul>
@@ -89,7 +94,8 @@
 
 
         <div class="d-flex flex-column-reverse flex-md-row bg-black align-items-center justify-content-around">
-            <div class="text-white mb-5 mb-md-0" style="width: 100%; max-width: 500px; margin-top: 5%">
+
+            <div class="text-white mb-5 mb-md-0" style=" margin-top: 5%">
                 <div class="d-flex">
                     <p class="px-3 py-2" style="background-color: gray; font-size: large; ">MODERN | PROFESSIONAL |
                         RELIABLE</p>
@@ -106,14 +112,16 @@
                 <br>
                 <br>
                 <div class="d-flex main_body">
-                    <a href="#aboutus"><button class="btn btn-outline-success" type="submit"
+                    <a href="#aboutus"><button class="btn btn-outline-warning" type="submit"
                             style="margin-right: 20px;">About</button></a>
-                    <a href="#contactus"><button class="btn btn-outline-success" type="submit">Contact Us</button></a>
+                    <a href="#contactus"><button class="btn btn-outline-warning" type="submit">Contact Us</button></a>
                 </div>
             </div>
 
             <div>
-                <img class="main_img" src="/images/doctor.png" alt="">
+                <lottie-player src="https://assets3.lottiefiles.com/packages/lf20_RF06qSPGns.json"
+                    background="transparent" speed="1" style="width: 400px; height: 400px;" loop
+                    autoplay></lottie-player>
             </div>
         </div>
 
@@ -124,11 +132,13 @@
 
 
 
-        <div id="aboutus" class="about d-flex align-items-center justify-content-around" >
+        <div id="aboutus" class="about d-flex align-items-center justify-content-around"
+            style="background-color: black;">
             <div class="left" style="width: 41%; font-size: 16px;">
-                <h1 class="about_h1" style="font-size: 50px; font-weight: 600;">About Us</h1>
+                <h1 class="about_h1" style="font-size: 50px; font-weight: 600; color: orange;">About Us</h1>
                 <br>
-                <p class="about">Welcome to our fitness community! We're passionate about helping people live healthier,
+                <p class="about" style="color: white;">Welcome to our fitness community! We're passionate about helping
+                    people live healthier,
                     happier lives through exercise, nutrition, and a supportive community.
                     <br>
 
@@ -150,17 +160,19 @@
                 </p>
             </div>
             <div class="right d-flex flex-column align-items-center justify-content-center">
-                <img class="about_img" src="/images/about.jpg" alt="">
+                <lottie-player src="https://assets10.lottiefiles.com/packages/lf20_n1oyepxw.json"
+                    background="transparent" speed="1" style="width: 400px; height: 400px;" loop
+                    autoplay></lottie-player>
             </div>
         </div>
 
 
 
-        <section id="teammembers" class="team-members">
+        <section id="teammembers" class="team-members" style="background-color: black;">
 
             <div class="container">
                 <div class="d-flex align-items-center justify-content-center">
-                    <h1 style="font-size: 50px; font-weight: 600;">Meet Our Team</h1>
+                    <h1 style="font-size: 50px; font-weight: 600; color: orange;">Meet Our Team</h1>
                 </div>
 
 
@@ -176,9 +188,9 @@
                                 <h4 class="card-title">John Doe</h4>
                                 <h6 class="card-subtitle mb-2 text-muted">Personal Trainer</h6>
                                 <div class="social-links">
-                                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                                    <a href="#"><i class="fa-brands fa-instagram"></i></i></a>
+                                    <a href="#"><img src="twitter.svg" alt=""></a>
+                                    <a href="#"><img src="facebook.svg" alt=""></a>
+                                    <a href="#"><img src="insta.svg" alt=""></i></a>
                                 </div>
                             </div>
                         </div>
@@ -192,9 +204,9 @@
                                 <h4 class="card-title">Tom Smith</h4>
                                 <h6 class="card-subtitle mb-2 text-muted">Fitness Director</h6>
                                 <div class="social-links">
-                                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                                    <a href="#"><i class="fa-brands fa-instagram"></i></i></a>
+                                    <a href="#"><img src="twitter.svg" alt=""></i></a>
+                                    <a href="#"><img src="facebook.svg" alt=""></a>
+                                    <a href="#"><img src="insta.svg" alt=""></i></a>
                                 </div>
                             </div>
                         </div>
@@ -208,9 +220,9 @@
                                 <h4 class="card-title">Capsy</h4>
                                 <h6 class="card-subtitle mb-2 text-muted">Yoga Instructor</h6>
                                 <div class="social-links">
-                                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                                    <a href="#"><i class="fa-brands fa-instagram"></i></i></a>
+                                    <a href="#"><img src="twitter.svg" alt=""></i></a>
+                                    <a href="#"><img src="facebook.svg" alt=""></a>
+                                    <a href="#"><img src="insta.svg" alt=""></i></a>
                                 </div>
                             </div>
                         </div>
@@ -228,9 +240,9 @@
                                 <h4 class="card-title">Abraham</h4>
                                 <h6 class="card-subtitle mb-2 text-muted">Nutritionist</h6>
                                 <div class="social-links">
-                                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                                    <a href="#"><i class="fa-brands fa-instagram"></i></i></a>
+                                    <a href="#"><img src="twitter.svg" alt=""></i></a>
+                                    <a href="#"><img src="facebook.svg" alt=""></a>
+                                    <a href="#"><img src="insta.svg" alt=""></i></a>
                                 </div>
                             </div>
                         </div>
@@ -241,12 +253,12 @@
                         <div class="card h-100">
                             <img class="card-img-top" src="/images/image5.jpg" alt="Team Member">
                             <div class="card-body">
-                                <h4 class="card-title">Narendra</h4>
+                                <h4 class="card-title">Modi Narendra</h4>
                                 <h6 class="card-subtitle mb-2 text-muted">Personal Trainer</h6>
                                 <div class="social-links">
-                                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                                    <a href="#"><i class="fa-brands fa-instagram"></i></i></a>
+                                    <a href="#"><img src="twitter.svg" alt=""></i></a>
+                                    <a href="#"><img src="facebook.svg" alt=""></a>
+                                    <a href="#"><img src="insta.svg" alt=""></i></a>
                                 </div>
                             </div>
                         </div>
@@ -257,12 +269,12 @@
                         <div class="card h-100">
                             <img class="card-img-top" src="/images/image6.jpg" alt="Team Member">
                             <div class="card-body">
-                                <h4 class="card-title">Gandhi</h4>
+                                <h4 class="card-title">Gandhi Mahatma</h4>
                                 <h6 class="card-subtitle mb-2 text-muted">Yoga Instructor</h6>
                                 <div class="social-links">
-                                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                                    <a href="#"><i class="fa-brands fa-instagram"></i></i></a>
+                                    <a href="#"><img src="twitter.svg" alt=""></i></a>
+                                    <a href="#"><img src="facebook.svg" alt=""></a>
+                                    <a href="#"><img src="insta.svg" alt=""></i></a>
                                 </div>
                             </div>
                         </div>
@@ -275,11 +287,11 @@
         <br>
         <br>
 
-        <section itemid="gallery" id="gallery" class="mb-12">
+        <section itemid="gallery" id="gallery" class="mb-12" style="background-color: black;">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12 text-center">
-                        <h2 style="font-size: 50px; font-weight: 600;">Gallery</h2>
+                        <h2 style="font-size: 50px; font-weight: 600; color: orange;">Gallery</h2>
                         <hr>
                     </div>
                 </div>
@@ -321,11 +333,11 @@
 
 
         <!-- Blog section -->
-        <section id="Blogs" class="bg-light">
+        <section id="Blogs" class="" style="background-color: black;">
             <div class="container py-5">
                 <div class="row">
                     <div class="col-12 text-center">
-                        <h1 style="font-size: 50px; font-weight: 600;" class="mb-4">Latest Blogs</h1>
+                        <h1 style="font-size: 50px; font-weight: 600; color: orange;" class="mb-4">Latest Blogs</h1>
                     </div>
                 </div>
                 <div class="row">
@@ -371,9 +383,9 @@
 
 
         <!-- Testimonials   -->
-        <section id="Testimonials" class="bg-light mb-24">
+        <section id="Testimonials" class=" mb-24" style="background-color: black;">
             <div class="container" style="padding-bottom: 50px;">
-                <h2 class="text-center mb-5" style="font-size: 50px; font-weight: 600;">Testimonials</h2>
+                <h2 class="text-center mb-5" style="font-size: 50px; font-weight: 600; color: orange;">Testimonials</h2>
                 <div class="row">
                     <div class="col-lg-4 mb-4">
                         <div class="card">
@@ -381,7 +393,7 @@
                                 <p class="card-text">I've been a member of this gym for over a year now, and I've never
                                     felt stronger or more confident. The trainers are amazing and always pushing me to
                                     my limits. I've seen incredible progress in my strength and endurance, and I
-                                    couldn't be happier with my results.
+
 
                                 </p>
                             </div>
@@ -426,7 +438,7 @@
 
         <!-- FAQ section -->
         <div class="container" id="faq">
-            <h1 class="text-center mb-5" style="font-size: 40px;">Frequently Asked Questions</h1>
+            <h1 class="text-center mb-5" style="font-size: 40px; color: orange;">Frequently Asked Questions</h1>
             <div class="accordion" id="faqAccordion">
                 <div class="card">
                     <div class="card-header" id="headingOne">
@@ -511,30 +523,30 @@
         <!-- CONTACT PAGE -->
         <!-- <hr> -->
 
-        <section id="contactus" class="py-5 bg-light">
+        <section id="contactus" class="py-5 ">
             <div class="container">
-                <h1 style="font-size: 50px; font-weight: 600;">Contact Us</h1>
+                <h1 style="font-size: 50px; font-weight: 600; color: orange;">Contact Us</h1>
                 <div class=" row d-flex align-items-center justify-content-evenly">
                     <div class="imgwala col-lg-6">
 
                         <form action="#" method="post">
                             <div class="form-group">
-                                <label for="name">Name</label>
+                                <label for="name" style="color: white;">Name</label>
                                 <input type="text" class="form-control" id="name" name="name"
                                     placeholder="Enter your name">
                             </div>
                             <div class="form-group">
-                                <label for="email">Email address</label>
+                                <label for="email" style="color: white;">Email address</label>
                                 <input type="email" class="form-control" id="email" name="email"
                                     placeholder="Enter your email">
                             </div>
                             <div class="form-group">
-                                <label for="subject">Subject</label>
+                                <label for="subject" style="color: white;">Subject</label>
                                 <input type="text" class="form-control" id="subject" name="subject"
                                     placeholder="Enter your subject">
                             </div>
                             <div class="form-group">
-                                <label for="message">Message</label>
+                                <label for="message" style="color: white;">Message</label>
                                 <textarea class="form-control" id="message" name="message" rows="5"
                                     placeholder="Enter your message"></textarea>
                             </div>
@@ -559,15 +571,15 @@
 
         <!-- Footer -->
         <footer class="py-4">
-            <div class="container">
+            <div class="container" style="color: white;">
                 <div class="row flex justify-center item-center text-center">
                     <div class="col-md-4">
                         <h5>Connect with us</h5>
                         <ul class="list-unstyled">
-                            <li><a href="#"><i class="fab fa-facebook-f"></i> Facebook</a></li>
-                            <li><a href="#"><i class="fab fa-twitter"></i> Twitter</a></li>
-                            <li><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
-                            <li><a href="#"><i class="fab fa-linkedin-in"></i> LinkedIn</a></li>
+                            <li><a href="#"><img src="facebook.svg" alt=""> Facebook</a></li>
+                            <li><img src="twitter.svg" alt=""> Twitter</a></li>
+                            <li><a href="#"><img src="insta.svg" alt=""> Instagram</a></li>
+                            <!-- <li><a href="#"><i class="fab fa-linkedin-in"></i> LinkedIn</a></li> -->
                         </ul>
                     </div>
                     <div class="col-md-4">
