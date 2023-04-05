@@ -7,6 +7,9 @@
 .about_img{
     width: 150px;
 }
+.hov:hover{
+    color: rgb(9, 170, 9);
+}
 
 #myBtn {
     display: none; /* Hidden by default */
